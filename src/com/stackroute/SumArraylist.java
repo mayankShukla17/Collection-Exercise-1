@@ -1,4 +1,4 @@
-package in.legato;
+package com.stackroute;
 /*Program 3:
 Write a program to calculate the sum of elements of two input arraylists.
 
@@ -17,46 +17,45 @@ If any of the list is null, it should be considered as empty list
 
 import java.util.*;
 public class SumArraylist {
-	public static void getSumofListElements(List<Integer>L1,List<Integer>L2){
-		List<Integer>L=new ArrayList<>(L1);
-		Set<Integer> s = new LinkedHashSet<>(L);
-		L.addAll(s);
+	public static void getSumofListElements(List<Integer> list1,List<Integer> list2){
+		List<Integer> listOne=new ArrayList<>( list1);
+		Set<Integer> set1= new LinkedHashSet<>(listOne);
+		listOne.addAll(set1);
 		int sumfirst=0;
-		for(int i = 0;i< L.size();i++){
-			sumfirst += L.get(i);
+		for(int i = 0;i< listOne.size();i++){
+			sumfirst += listOne.get(i);
 		}
 		System.out.println(sumfirst);
-		List<Integer>M=new ArrayList<>(L2);
-		Set<Integer> s2 = new LinkedHashSet<>(M);
-		L.addAll(s2);
-		int sumsecond=0;
-		for(int i = 0;i< M.size();i++){
-			sumsecond+= M.get(i);
+		List<Integer> listTwo=new ArrayList<>(list2);
+		Set<Integer> set2 = new LinkedHashSet<>(listTwo);
+		listTwo.addAll(set2);
+		int sumSecond=0;
+		for(int i = 0;i< listTwo.size();i++){
+			sumSecond+= listTwo.get(i);
 		}
-		System.out.println(sumsecond);
+		System.out.println(sumSecond);
 	}
 	public static void main (String []args){
-		ArrayList<Integer>L1=new ArrayList<Integer>();
-		ArrayList<Integer>L2=new ArrayList<Integer>();
-		L1.add(1);
-		L1.add(2);
-		L1.add(3);
-		L1.add(4);
-		L1.add(5);
-		L2.add(6);
-		L2.add(7);
-		L2.add(8);
-		L2.add(9);
-		getSumofListElements(L1, L2);
-		ArrayList<Integer> L3=new ArrayList<>();
-		L3.addAll(L1);
-		L3.addAll(L2);
+		ArrayList<Integer> list1=new ArrayList<Integer>();
+		ArrayList<Integer> list2=new ArrayList<Integer>();
+		list1.add(1);
+		list1.add(2);
+		list1.add(3);
+		list1.add(4);
+		list1.add(5);
+		list2.add(6);
+		list2.add(7);
+		list2.add(8);
+		list2.add(9);
+		getSumofListElements(list1, list2);
+		ArrayList<Integer> list3=new ArrayList<>();
+		list3.addAll(list1);
+		list3.addAll(list2);
 		int sumthird = 0;
-		for(int i = 0;i< L3.size();i++){
-			sumthird += L3.get(i);
+		for(int i = 0;i< list3.size();i++){
+			sumthird += list3.get(i);
 		}
-		System.out.println(L3);
+		System.out.println(list3);
 		System.out.println(sumthird);
-
 	}
 }

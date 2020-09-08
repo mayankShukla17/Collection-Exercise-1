@@ -1,4 +1,4 @@
-package in.legato;
+package com.stackroute;
 /*Program 4:
 Write a program to implement a set interface which sorts the given randomly ordered names in ascending order. Convert the sorted set in to an array list
 
@@ -13,7 +13,7 @@ public class ListSorting {
 	{ 
 		HashSet<String> set = new HashSet<String>(); 
 		set.add("Harry"); 
-		set.add(" Olive"); 
+		set.add("Olive");
 		set.add("Alice"); 
 		set.add("Bluto");
 		set.add("Eugene");

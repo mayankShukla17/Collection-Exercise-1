@@ -1,4 +1,4 @@
-package in.legato;
+package com.stackroute;
 /*Program 2:
 Problem Statement: Create ArrayList and Search elements in the List
 

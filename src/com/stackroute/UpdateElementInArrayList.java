@@ -1,4 +1,4 @@
-package in.legato;
+package com.stackroute;
 /*Program 1:
 Write a Java program to update the specific array element by given 
 element and empty the array list .
